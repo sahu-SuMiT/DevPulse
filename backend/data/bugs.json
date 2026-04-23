@@ -1,0 +1,20 @@
+[
+  {"id":"BUG-101","title":"Payment fails on retry with expired card","severity":"high","relatedIssueId":"ISS-101","assignee":"dev-001","reportedAt":"2025-03-10T11:00:00Z","resolvedAt":"2025-03-11T09:00:00Z","month":"2025-03"},
+  {"id":"BUG-102","title":"Tokenized card not displaying last 4 digits","severity":"medium","relatedIssueId":"ISS-103","assignee":"dev-001","reportedAt":"2025-03-18T14:00:00Z","resolvedAt":"2025-03-19T10:00:00Z","month":"2025-03"},
+  {"id":"BUG-103","title":"Apple Pay double charge on timeout","severity":"high","relatedIssueId":"ISS-107","assignee":"dev-001","reportedAt":"2025-04-15T09:00:00Z","resolvedAt":"2025-04-16T11:00:00Z","month":"2025-04"},
+  {"id":"BUG-104","title":"Analytics widget shows NaN for zero transactions","severity":"low","relatedIssueId":"ISS-109","assignee":"dev-001","reportedAt":"2025-04-25T10:00:00Z","resolvedAt":"2025-04-25T15:00:00Z","month":"2025-04"},
+  {"id":"BUG-105","title":"Subscription billing skips first month","severity":"high","relatedIssueId":"ISS-113","assignee":"dev-001","reportedAt":"2025-05-22T09:00:00Z","resolvedAt":"2025-05-23T14:00:00Z","month":"2025-05"},
+
+  {"id":"BUG-201","title":"Webhook signature validation fails intermittently","severity":"high","relatedIssueId":"ISS-202","assignee":"dev-002","reportedAt":"2025-03-15T10:00:00Z","resolvedAt":"2025-03-16T14:00:00Z","month":"2025-03"},
+  {"id":"BUG-202","title":"Razorpay callback returns wrong status code","severity":"medium","relatedIssueId":"ISS-206","assignee":"dev-002","reportedAt":"2025-04-18T11:00:00Z","resolvedAt":"2025-04-19T10:00:00Z","month":"2025-04"},
+  {"id":"BUG-203","title":"Settlement report missing failed transactions","severity":"high","relatedIssueId":"ISS-208","assignee":"dev-002","reportedAt":"2025-05-12T09:00:00Z","resolvedAt":"2025-05-13T11:00:00Z","month":"2025-05"},
+
+  {"id":"BUG-301","title":"CI pipeline fails on large repos","severity":"medium","relatedIssueId":"ISS-301","assignee":"dev-003","reportedAt":"2025-03-14T10:00:00Z","resolvedAt":"2025-03-15T11:00:00Z","month":"2025-03"},
+  {"id":"BUG-302","title":"Feature flag cache not invalidating","severity":"high","relatedIssueId":"ISS-303","assignee":"dev-003","reportedAt":"2025-03-25T09:00:00Z","resolvedAt":"2025-03-26T14:00:00Z","month":"2025-03"},
+  {"id":"BUG-303","title":"Rate limiter blocks legitimate burst traffic","severity":"medium","relatedIssueId":"ISS-304","assignee":"dev-003","reportedAt":"2025-04-07T14:00:00Z","resolvedAt":"2025-04-08T10:00:00Z","month":"2025-04"},
+
+  {"id":"BUG-401","title":"Cache returns stale data after update","severity":"medium","relatedIssueId":"ISS-401","assignee":"dev-004","reportedAt":"2025-03-10T10:00:00Z","resolvedAt":"2025-03-11T14:00:00Z","month":"2025-03"},
+  {"id":"BUG-402","title":"Message queue drops messages under load","severity":"high","relatedIssueId":"ISS-402","assignee":"dev-004","reportedAt":"2025-03-20T09:00:00Z","resolvedAt":"2025-03-21T11:00:00Z","month":"2025-03"},
+  {"id":"BUG-403","title":"GraphQL resolver returns null for nested fields","severity":"medium","relatedIssueId":"ISS-407","assignee":"dev-004","reportedAt":"2025-04-25T10:00:00Z","resolvedAt":"2025-04-25T16:00:00Z","month":"2025-04"},
+  {"id":"BUG-404","title":"Audit log missing delete events","severity":"high","relatedIssueId":"ISS-409","assignee":"dev-004","reportedAt":"2025-05-12T14:00:00Z","resolvedAt":"2025-05-13T10:00:00Z","month":"2025-05"}
+]

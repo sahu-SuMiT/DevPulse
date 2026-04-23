@@ -1,0 +1,111 @@
+.insight-panel {
+  margin-top: var(--space-3xl);
+}
+
+.insight-card {
+  padding: var(--space-2xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.insight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.insight-positive::before {
+  background: linear-gradient(90deg, var(--accent-emerald), var(--accent-cyan));
+}
+
+.insight-coaching::before {
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet));
+}
+
+.insight-concern::before {
+  background: linear-gradient(90deg, var(--accent-amber), var(--accent-rose));
+}
+
+.insight-balanced::before {
+  background: linear-gradient(90deg, var(--accent-blue), var(--accent-amber));
+}
+
+.insight-header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.insight-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.insight-headline {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.insight-label {
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.insight-summary {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+  max-width: 720px;
+}
+
+.insight-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border-glass);
+}
+
+.insight-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+.insight-detail-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.insight-detail-dot.status-good { background: var(--accent-emerald); }
+.insight-detail-dot.status-moderate { background: var(--accent-amber); }
+.insight-detail-dot.status-needs-attention { background: var(--accent-rose); }
+.insight-detail-dot.status-no-data { background: var(--text-tertiary); }
+
+.insight-detail-text {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .insight-card {
+    padding: var(--space-xl);
+  }
+  .insight-headline {
+    font-size: var(--font-size-lg);
+  }
+}
