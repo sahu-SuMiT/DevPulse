@@ -35,7 +35,7 @@ app.get('/api/developers/:id/metrics', (req, res) => {
   const metrics = getMetrics(dev.id, month);
   const history = getMetricsHistory(dev.id);
 
-  res.json({ 
+  res.json({
     developer: dev,
     month,
     metrics,
@@ -61,7 +61,7 @@ app.get('/api/developers/:id/insights', (req, res) => {
 app.get('/api/team/summary', (req, res) => {
   const month = req.query.month || '2025-05';
   const teamData = getTeamMetrics(month);
-  
+
   res.json({
     month,
     ...teamData,
@@ -76,6 +76,10 @@ app.get('/api/months', (req, res) => {
       { value: '2025-05', label: 'May 2025' },
     ],
   });
+});
+
+app.get('/api/health', (req, res) => {
+  res.status(200).json({ status: 'ok' });
 });
 
 app.listen(PORT, () => {
